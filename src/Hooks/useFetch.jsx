@@ -17,7 +17,7 @@ const useFetch = (initialData) => {
         setMoreData((prev) => [...prev, ...response.data.data]);
       }
     } catch (error) {
-      setError(error.response.data);
+      setError(error?.response?.data);
     } finally {
       setLoading(false);
     }
