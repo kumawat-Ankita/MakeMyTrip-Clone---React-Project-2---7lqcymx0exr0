@@ -22,7 +22,7 @@ const MytripsPage = () => {
         <div className="mytriplistcontainer-upcoming">
         
           <div>
-            <h3>Looks empty, you've no upcoming bookings.</h3>
+            <h3>Looks empty, you&apos;ve no upcoming bookings.</h3>
             <p>When you book a trip, you will see your itinerary here.</p>
             <Link to="/">
               <button>PLAN A TRIP</button>

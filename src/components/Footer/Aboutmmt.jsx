@@ -42,7 +42,7 @@ const Aboutmmt = () => {
           <div className="domestic-flights">
             <h3>Domestic Flights with MakeMyTrip</h3>
             <p>
-              MakeMyTrip is India's leading player for flight bookings. With the
+              MakeMyTrip is India&apos;s leading player for flight bookings. With the
               cheapest fare guarantee, experience great value at the lowest
               price. Instant notifications ensure current flight status, instant
               fare drops, amazing discounts, instant refunds and rebook options,

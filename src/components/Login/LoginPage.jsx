@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./login.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useAuthContext } from "../../Context/AuthContext";
 import useFetch from "../../Hooks/useFetch";
 import { toast } from "react-toastify";
@@ -155,7 +155,7 @@ const LoginPage = () => {
         </button>
       </form>
       <div className="termsandconditions">
-        <p>By proceeding, you agree to MakeMyTrip's</p>
+        <p>By proceeding, you agree to MakeMyTrip&apos;s</p>
         <Link style={{ textDecoration: "None", color: "rgb(32, 166, 249)" }}>
           Privacy Policy, User Agreement
         </Link>

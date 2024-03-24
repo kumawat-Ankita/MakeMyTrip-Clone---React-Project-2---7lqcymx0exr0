@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../Context/AuthContext";
@@ -187,7 +187,7 @@ const SignupPage = () => {
         </button>
       </form>
       <div className="termsandconditions">
-        <p>By proceeding, you agree to MakeMyTrip's</p>
+        <p>By proceeding, you agree to MakeMyTrip&apos;s</p>
         <Link style={{ textDecoration: "None", color: "rgb(32, 166, 249)" }}>
           Privacy Policy , User Agreement
         </Link>

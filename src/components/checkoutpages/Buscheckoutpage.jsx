@@ -84,7 +84,7 @@ const Buscheckoutpage = () => {
                     {data?.data?.departureTime}
 
                     <span className="font16 latoRegular darkGreyText ml-2">
-                      {dateofmmonth} {month}' {lastTwoDigitsOfYear}, {day}
+                      {dateofmmonth} {month}&apos; {lastTwoDigitsOfYear}, {day}
                     </span>
                   </span>
                   <div className="makeFlex column maxWidth200 maxHeight200 appendTop8">
@@ -102,7 +102,7 @@ const Buscheckoutpage = () => {
                     {data?.data?.arrivalTime}
 
                     <span className="font16 latoRegular darkGreyText ml-2">
-                      {dateofmmonthNext} {month}' {lastTwoDigitsOfYear},{" "}
+                      {dateofmmonthNext} {month}&apos; {lastTwoDigitsOfYear},{" "}
                       {nextDayOfWeek}
                     </span>
                   </span>
