@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./upiwidget.css";
 import {upiqrcode} from "../../../src/allimages";
 import ConfirmationPopup from "../confirmationpopup/ConfirmationPopup";
-import { toast } from "react-toastify";
 import useFetch from "../../Hooks/useFetch";
 import { useParams } from "react-router-dom";
 

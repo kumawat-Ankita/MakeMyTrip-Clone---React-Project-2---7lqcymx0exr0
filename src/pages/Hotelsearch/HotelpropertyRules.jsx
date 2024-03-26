@@ -1,5 +1,3 @@
-// Assuming 'data' contains the provided data
-
 const HotelpropertyRules = ({ data }) => {
   return (
     <div>

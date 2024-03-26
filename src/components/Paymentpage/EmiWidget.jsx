@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./emiwidget.css";
-import { CiSearch } from "react-icons/ci";
 import {hdfc} from "../../../src/allimages";
 import {icici} from "../../../src/allimages";
 import {citibank} from "../../../src/allimages";

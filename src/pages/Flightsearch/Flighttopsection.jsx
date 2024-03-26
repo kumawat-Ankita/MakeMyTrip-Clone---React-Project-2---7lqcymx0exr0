@@ -65,7 +65,6 @@ const Flighttopsection = ({ updateSearchParams }) => {
     }));
   };
   const handleSearchButtonClick = () => {
-    // Call the updateSearchParams function with the selected data
     updateSearchParams(searchData);
   };
   return (

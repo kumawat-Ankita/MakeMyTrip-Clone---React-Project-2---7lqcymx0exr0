@@ -16,7 +16,6 @@ const HotelCityDropdown = ({
   useEffect(() => {
     get("/bookingportals/hotel");
   }, []);
-  // console.log("hotel", data);
   const handleCitySelect = (hotel) => {
     updateSelecetedCity(hotel);
     setShowCity(false);

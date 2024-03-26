@@ -1,9 +1,7 @@
 .hotelwidgetmaindiv {
-  /* height: 263px; */
   height: 327px;
   width: 100%;
   padding: 65px 10px 0px 10px;
-  /* margin-bottom: 40px; */
   background-color: white;
   position: relative;
   z-index: 1;
@@ -12,7 +10,6 @@
   font-size: 14px;
 }
 .hw-upperdiv {
-  /* border: 2px solid red; */
   cursor: default;
   padding: 8px;
   font-weight: 600;
@@ -24,7 +21,6 @@
   list-style: none;
 }
 .hw-upperdiv div ul {
-  /* border: 2px solid black; */
   margin-bottom: 10px;
   list-style: none;
   display: flex;
@@ -41,7 +37,6 @@
   margin-right: 0;
 }
 .hw-cityname {
-  /* border: 2px solid green; */
   border-radius: 10px 0 0 10px;
   width: 39%;
   padding: 5px 19px;
@@ -52,12 +47,10 @@
 }
 .hw-cityname p:nth-child(1) {
   display: flex;
-  /* border: 2px solid red; */
   margin-bottom: 10px;
   margin-top: 0;
 }
 .hw-cityname p:nth-child(2) {
-  /* border: 2px solid red; */
   margin: 0;
   padding: 0px;
   margin: 0px;
@@ -77,7 +70,6 @@
   align-items: flex-start;
 }
 .checkinheaddiv {
-  /* border: 2px solid red; */
   display: flex;
   cursor: pointer;
 }
@@ -90,7 +82,6 @@
   padding: 0;
 }
 .hw-addcheckin p span:nth-child(1) {
-  /* border: 2px solid red; */
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -154,7 +145,6 @@
   font-weight: 900;
 }
 .hw-priceperight {
-  /* border: 1px solid red; */
   padding: 10px 19px;
   display: flex;
   flex-direction: column;
@@ -170,7 +160,6 @@
   text-align: left;
 }
 .hw-bottomdiv {
-  /* border: 1px solid red; */
   cursor: default;
   padding-top: 30px;
   display: flex;
@@ -186,7 +175,6 @@
 .hw-bottomdiv span {
   background-color: rgb(242, 242, 242);
   border-radius: 5px;
-  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;

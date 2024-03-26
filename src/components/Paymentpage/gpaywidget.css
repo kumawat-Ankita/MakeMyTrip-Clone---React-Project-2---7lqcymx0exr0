@@ -1,5 +1,4 @@
 .gpaymain-container {
-  /* border: 1px solid red; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,6 @@
   align-items: baseline;
 }
 .gpay-input-btn {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -42,7 +40,6 @@
   border: solid 1px #9b9b9b;
   border-radius: 4px;
   transition: 0.1s ease-out;
-  /* height: 40px; */
   width: 212px;
   font-size: 14px;
   padding: 12px 15px;

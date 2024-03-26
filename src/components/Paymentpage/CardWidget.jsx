@@ -15,12 +15,6 @@ const CardWidget = ({ setShowConfirmation, showConfirmation }) => {
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
 
-  // const handleConfirmClick = () => {
-  //   validateCardNumber();
-  //   validateName();
-  //   validateCvvCode();
-  // };
-
   const monthOptions = [
     { value: "01", label: "January (01)" },
     { value: "02", label: "February (02)" },

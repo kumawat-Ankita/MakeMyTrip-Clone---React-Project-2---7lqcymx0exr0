@@ -1,5 +1,4 @@
 .topnavbarmaindiv {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,14 +15,12 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* border: 2px solid yellow; */
 }
 .superoffers {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
-  /* border: 2px solid green; */
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -60,7 +57,6 @@
   justify-content: center;
   display: flex;
   flex-direction: row;
-  /* border: 2px solid green; */
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -89,7 +85,6 @@
 .mytrips {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid green; */
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -118,7 +113,6 @@
 .rightnavdiv {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid yellow; */
 }
 .loginorcreateaccnt {
   background-image: var(
@@ -136,7 +130,6 @@
   font-weight: 900;
 }
 .afterloginorcreateaccnt {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./hotelsearch.css";
 import { Stickyheader } from "../../components/stickeyheader/Stickyheader";
-import { Link, useSearchParams } from "react-router-dom";
+import {useSearchParams } from "react-router-dom";
 import HotelTopSection from "./HotelTopSection";
 import HotelCard from "./HotelCard";
 import useFetch from "../../Hooks/useFetch";
@@ -53,8 +53,6 @@ const HotelSearchPage = () => {
           data={data}
           updateSearchParams={handleHotelSearchBtnClick}
         />
-
-        {/* <Container> */}
         <div className="hotelsearchbottomdiv">
           <div className="applyfilters-sidebar">
             <div className="selectfiltersdiv">
@@ -213,7 +211,6 @@ const HotelSearchPage = () => {
 
           <HotelCard data={data} />
         </div>
-        {/* </Container> */}
       </div>
     </>
   );

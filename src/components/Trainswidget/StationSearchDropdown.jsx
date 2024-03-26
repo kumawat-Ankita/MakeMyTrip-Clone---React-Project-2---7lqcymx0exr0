@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import TrainDropdown from "./TrainDropdown";
-// import "./airportsearch.css";
 import OutsideClickHandler from "react-outside-click-handler";
 
 const StationSearchDropdown = ({
@@ -26,8 +25,6 @@ const StationSearchDropdown = ({
         <p>{field}</p>
         <p>{trainData.JunctionName}</p>
       </div>
-
-      {/* <p>{locations.trainStationB}</p> */}
       {showDropdown && (
         <OutsideClickHandler
           onOutsideClick={() => {

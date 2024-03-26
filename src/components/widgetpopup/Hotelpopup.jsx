@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./widgetpopup.css";
 import { Button } from "@mui/material";
 

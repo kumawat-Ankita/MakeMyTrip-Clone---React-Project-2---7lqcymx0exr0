@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import {logowhite} from "../../../src/allimages";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./topnavbar.css";
 import { BsChevronDown } from "react-icons/bs";
 import TabforLogin from "../Login/TabforLogin";
@@ -125,8 +125,7 @@ const TopNavbar = () => {
               <div className="flaglogo"></div>
               <div>IN|ENG|INR</div>
               <div className="languageselectordownarror">
-                {/* <BsChevronDown /> */}
-              </div>
+               </div>
             </div>
           </div>
         </div>

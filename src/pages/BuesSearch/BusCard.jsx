@@ -33,14 +33,12 @@ const BusCard = ({ data }) => {
                 <div className="bustimedetails-div">
                   <div className="busdeparttime-div">
                     <span>{bus?.departureTime}</span>
-                    {/* <span>18 JAN</span> */}
                   </div>
                   <div className="bustime-seperationline"></div>
                   <div className="bus-duraion">09hrs 00mins</div>
                   <div className="bustime-seperationline"></div>
                   <div className="busarrivaltime-div">
                     <span>{bus?.arrivalTime}</span>
-                    {/* <span>19 JAN</span> */}
                   </div>
                 </div>
                 <div className="busfare-div">₹ {bus?.fare}</div>

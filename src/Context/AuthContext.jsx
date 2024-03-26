@@ -45,17 +45,6 @@ const AuthContextProvider = ({ children }) => {
     }
   };
 
-  // const setUser = ({ data }) => {
-  //   console.log(data, "here");
-  //   localStorage.setItem("prime_user", JSON.stringify(data));
-  //   // const user = JSON.parse(localStorage.getItem("prime_user"));
-  //   setAuthData((prev) => ({
-  //     ...prev,
-  //     user: data,
-  //   }));
-  //   console.log("context", "setUser");
-  // };
-
   return (
     <authContext.Provider
       value={{

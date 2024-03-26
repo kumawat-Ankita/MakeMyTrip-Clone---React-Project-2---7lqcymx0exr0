@@ -167,7 +167,6 @@ const TrainsWidget = () => {
                 onOutsideClick={() => setShowTrainPopup(false)}
               >
                 <Trainpopup
-                  // updateTrainPopupData={updateTrainPopupData}
                   setShowTrainPopup={setShowTrainPopup}
                   trainClass={trainClass}
                   setTrainClass={setTrainClass}

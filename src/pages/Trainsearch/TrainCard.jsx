@@ -8,8 +8,7 @@ import LoginContext from "../../Context/LoginContext";
 const TrainCard = ({ data }) => {
   const { authenticated } = useAuthContext();
   const { showLogin, setShowLogin } = useContext(LoginContext);
-  // numbers.filter(data => data?.trains % 2 === 0)
-
+ 
   return (
     <>
       <div className="searchresults-div">
@@ -23,7 +22,6 @@ const TrainCard = ({ data }) => {
                     <p className="train-number">#{train?.trainNumber}</p>
                     <p>
                       <span className="departure-dates">Departs on :</span>
-                      <span>S</span>
                       <span>S</span>
                       <span>M</span>
                       <span>T</span>
@@ -42,7 +40,6 @@ const TrainCard = ({ data }) => {
                   <div>
                     <p>{train?.travelDuration}</p>
                   </div>
-                  {/* <p className="linktoviewroute">View route</p> */}
                 </div>
                 <div className="arrivaldetails-div">
                   <p>{train?.arrivalTime}</p>

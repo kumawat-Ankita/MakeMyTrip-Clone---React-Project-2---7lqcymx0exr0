@@ -1,12 +1,10 @@
 .headernav {
-  /* border: 2px solid red; */
   margin-top: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .mainheadernav {
-  /* border: 2px solid yellow; */
   background-color: white;
   width: 868px;
   display: flex;

@@ -26,8 +26,6 @@ const HotelCard = ({ data }) => {
                   <div className="hoteldescriptiondiv">
                     <div className="hotelname-rating-div">
                       <h4>{hotel?.name}</h4>
-                      {/* <span className="blackstar"></span>
-                      <span className="greystar"></span> */}
                     </div>
                     <p className="hotellocation">
                       <span>{hotel?.location} </span>

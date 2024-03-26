@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import "../Trainswidget/trainswidget.css";
-
 import "./trainsearchpage.css";
 import OutsideClickHandler from "react-outside-click-handler";
 import Traintopdropdown from "./Traintopdropdown.jsx";

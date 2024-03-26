@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext,useState } from "react";
 import "./flightsearch.css";
 import "./flightdetails.css";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {indigoimg} from "../../../src/allimages";
 import {vistaraimg} from "../../../src/allimages";
 import {airindiaimg} from "../../../src/allimages";

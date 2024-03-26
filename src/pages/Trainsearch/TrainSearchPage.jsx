@@ -5,7 +5,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import Traintopsection from "./Traintopsection";
 import useFetch from "../../Hooks/useFetch";
 import TrainCard from "./TrainCard";
-// import CarouselDate from "./CarouselDate";
+
 
 const TrainsSearchPage = () => {
   const [params, setParams] = useSearchParams();
@@ -19,7 +19,6 @@ const TrainsSearchPage = () => {
   const { get, data } = useFetch([]);
 
   const handleCheckboxChange = (key, value) => {
-    // setSelectedOption(value === selectedOption ? null : value);
     if (value === "") {
       params.delete(key);
       setParams(params);

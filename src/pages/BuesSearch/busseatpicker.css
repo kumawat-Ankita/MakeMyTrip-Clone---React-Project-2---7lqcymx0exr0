@@ -8,13 +8,11 @@
   text-align: left;
   display: flex;
   flex-direction: row;
-  /* border: 1px solid blue; */
   border-radius: 0 0 12px 12px;
   overflow: hidden;
 }
 
 .seat-picker-div {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   width: 550px;
@@ -33,7 +31,6 @@
 }
 
 .point-picker-div {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,7 +38,6 @@
 }
 
 .child-board-drop {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: row;
   padding: 8px 20px;
@@ -60,7 +56,6 @@
 }
 
 .br-dr-box {
-  /* border: 1px solid red; */
   height: 120px;
   width: 490px;
   margin-right: 15px;
@@ -91,7 +86,6 @@
 }
 
 .seats-in-bus {
-  /* border: 1px solid red; */
   width: 320px;
   height: auto;
   border: 1px solid #cecece;
@@ -105,7 +99,6 @@
   gap: 20px;
 }
 .seats-in-bus div {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -131,7 +124,6 @@
 }
 
 .seatconfirm-and-continuebtn {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -139,7 +131,6 @@
   padding: 10px 20px;
 }
 .seats-price-div {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

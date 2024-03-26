@@ -61,10 +61,4 @@ const BusTopDropdown = ({ setShowDropdown, updateSelectedBusStand }) => {
   );
 };
 export default BusTopDropdown;
-// ackground: url(https://imgak.mmtcdn.com/flights/assets/media/dt/listing/fliIcon.png) no-repeat;
-//     background-size: 161px 58px;
-//     width: 162px;
-//     height: 57px;
-//     position: relative;
-//     display: inline-block;
-// }
+

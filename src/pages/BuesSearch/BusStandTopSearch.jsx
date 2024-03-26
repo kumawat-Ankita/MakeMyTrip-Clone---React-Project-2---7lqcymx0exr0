@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import OutsideClickHandler from "react-outside-click-handler";
 import BusTopDropdown from "./BusTopDropdown";
-// import "../Flightswidget/airportsearch.css";
-// import "./buseswidget.css";
 
 const BusStandTopSearch = ({
   handleSearchData,
@@ -24,7 +22,6 @@ const BusStandTopSearch = ({
 
   return (
     <>
-      {/* <div className="bs-bus-drpdwn-container" onClick={handleCityDropdown}> */}
       <div className="bs-busdetails-div" onClick={handleCityDropdown}>
         <p>
           {field} <MdKeyboardArrowDown size={20} />
@@ -46,7 +43,6 @@ const BusStandTopSearch = ({
           </div>
         </OutsideClickHandler>
       )}
-      {/* </div> */}
     </>
   );
 };

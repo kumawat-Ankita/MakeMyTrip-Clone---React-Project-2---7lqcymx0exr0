@@ -1,9 +1,7 @@
 .paymentpage-conainer {
-  /* border: 2px solid green; */
   height: auto;
 }
 .paymentpage-maindiv {
-  /* border: 2px solid red; */
   height: 180px;
   background-image: linear-gradient(to top, #15457b, #051423);
   padding: 15px 0 0 0;
@@ -14,7 +12,6 @@
 }
 .logo-and-text {
   cursor: default;
-  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: row;
   height: 36px;
@@ -37,7 +34,6 @@
   color: white;
 }
 .safeandsecure-div {
-  /* border: 1px solid yellow; */
   cursor: default;
   padding-right: 22rem;
   height: 36px;

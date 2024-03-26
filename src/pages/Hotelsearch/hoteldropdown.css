@@ -1,5 +1,4 @@
 .hs-hotel-citydrpdwn-main-div {
-  /* border: 1px solid red; */
   height: 400px;
   width: 350px;
   position: absolute;
@@ -23,7 +22,6 @@
   width: 100%;
 }
 .city-search-icon {
-  /* border: 1px solid red; */
   height: 13px;
   width: 13px;
   margin-right: 5px;
@@ -31,7 +29,6 @@
   position: absolute;
 }
 .hd-search-input {
-  /* border: 1px solid red; */
   width: 100%;
   background: #ffffff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
@@ -53,7 +50,6 @@
   padding: 0;
 }
 .city-search-list li {
-  /* border: 1px solid green; */
   padding: 5px 10px;
   margin-bottom: 5px;
   cursor: pointer;

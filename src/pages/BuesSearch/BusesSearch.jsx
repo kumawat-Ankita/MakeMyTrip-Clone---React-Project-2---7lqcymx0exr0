@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import "./busessearch.css";
 import { Stickyheader } from "../../components/stickeyheader/Stickyheader";
 import BusTopSection from "./BusTopSection";
@@ -19,7 +19,6 @@ const BusesSearch = () => {
   const { get, data } = useFetch([]);
 
   const handleCheckboxChange = (key, value) => {
-    // setSelectedOption(value === selectedOption ? null : value);
     if (value === "") {
       params.delete(key);
       setParams(params);

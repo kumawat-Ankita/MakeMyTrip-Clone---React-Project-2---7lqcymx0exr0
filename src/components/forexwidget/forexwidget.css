@@ -25,7 +25,6 @@
 .tripmoneyleftdiv {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
   align-items: flex-start;
   justify-content: center;
 }
@@ -38,7 +37,6 @@
   margin: 0;
 }
 .tripmoneyleftdiv p {
-  /* border: 1px solid red; */
   width: 450px;
   margin: 0;
   font-size: 18px;
@@ -50,7 +48,6 @@
   font-weight: 900;
 }
 .ordernowdiv {
-  /* border: 1px solid red; */
   font-size: 14px;
   width: 130px;
   margin-left: 450px;

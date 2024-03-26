@@ -1,12 +1,7 @@
 .trainspagemaindiv {
-  /* border: 2px solid green; */
   height: auto;
 }
-.trainspage-topdiv {
-  /* border: 2px solid red; */
-}
 .trains-searchdetails-div {
-  /* border: 2px solid yellow; */
   background: #0a223d;
   position: sticky;
   top: 0;
@@ -17,7 +12,6 @@
   padding: 20px 110px 20px 110px;
 }
 .fromcity-div {
-  /* border: 2px solid blue; */
   width: auto;
   padding: 4px 9px;
   background: hsla(0, 0%, 100%, 0.1);
@@ -47,7 +41,6 @@
   font-weight: 600;
 }
 .tocity-div {
-  /* border: 2px solid blue; */
   width: 100%;
   padding: 4px 9px;
   background: hsla(0, 0%, 100%, 0.1);
@@ -77,7 +70,6 @@
   font-weight: 600;
 }
 .traveldate-div {
-  /* border: 2px solid blue; */
   width: 100%;
   padding: 4px 9px;
   background: hsla(0, 0%, 100%, 0.1);
@@ -107,7 +99,6 @@
   font-weight: 600;
 }
 .class-div {
-  /* border: 2px solid blue; */
   margin-right: 30px;
   max-width: none;
   min-width: 134px;
@@ -167,7 +158,6 @@
   align-items: center;
 }
 .sortedby-div p:nth-child(2) {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
 }
@@ -175,12 +165,10 @@
   color: #008cff;
 }
 .trainspage-bottomdiv {
-  /* border: 2px solid greenyellow; */
   display: flex;
   padding: 0 110px 0 110px;
 }
 .filters-div {
-  /* border: 2px solid red; */
   margin: 0 30px 0 0;
   width: 230px;
   height: auto;
@@ -190,7 +178,6 @@
   padding: 0;
 }
 .flitercategory {
-  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -202,7 +189,6 @@
   margin: 0 0 20px 0;
 }
 .flitercategory ul {
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -210,7 +196,6 @@
   margin: 0;
 }
 .flitercategory ul li {
-  /* border: 2px solid magenta; */
   display: flex;
   margin-bottom: 16px;
   align-items: center;
@@ -225,12 +210,10 @@
   font-size: 16px;
 }
 .searchresults-div {
-  /* border: 2px solid blue; */
   width: 940px;
   height: auto;
 }
 .datecarousal {
-  /* border: 2px solid red; */
   border-radius: 3.1px;
   box-shadow: 0 4px 8px 0 rgba(138, 107, 118, 0.08);
   border: 1px solid #e7e7e7;
@@ -253,14 +236,12 @@
   display: none;
 }
 .showtrains-topdiv {
-  /* border: 1px solid red; */
   margin-bottom: 20px;
   height: 62px;
   display: flex;
   flex-direction: row;
 }
 .trainname-and-details {
-  /* border: 1px solid green; */
   margin-right: 60px;
   display: flex;
   flex-direction: column;
@@ -269,7 +250,6 @@
   align-items: flex-start;
 }
 .trainname {
-  /* border: 1px solid yellow; */
   font-size: 22px;
   font-weight: 900;
   letter-spacing: -0.49px;
@@ -280,7 +260,6 @@
 .traindetails-div {
   display: flex;
   font-size: 12px;
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: row;
 }
@@ -307,7 +286,6 @@
   margin-left: 3px;
 }
 .departuredetails-div {
-  /* border: 2px solid blue; */
   height: 54px;
   width: 171px;
   display: flex;
@@ -332,7 +310,6 @@
   width: 239px;
 }
 .traveltime-div {
-  /* border: 2px solid blue; */
   height: 54px;
   width: 239px;
   display: flex;
@@ -355,7 +332,6 @@
   cursor: pointer;
 }
 .arrivaldetails-div {
-  /* border: 2px solid blue; */
   height: 54px;
   width: 165px;
   display: flex;
@@ -380,7 +356,6 @@
   width: 239px;
 }
 .showtrains-btmdiv {
-  /* border: 2px solid red; */
   padding: 2px;
   display: flex;
   flex-direction: row;
@@ -406,7 +381,6 @@
   position: relative;
 }
 .sl-card div {
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -430,7 +404,6 @@
   font-weight: 400;
 }
 .ts-train-search-maindiv {
-  /* border: 1px solid red; */
   height: 400px;
   width: 314px;
   background-color: white;

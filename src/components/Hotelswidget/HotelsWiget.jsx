@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./hotelswidget.css";
 import { Container } from "@mui/material";
 import Searchbutton from "../Searchbutton/Searchbutton";
@@ -143,7 +143,6 @@ const HotelsWiget = () => {
                 <MdKeyboardArrowDown size={20} color="#008cff" />
               </p>
               <p className="hw-selectedcityname">{selectedCity.location}</p>
-              {/* <p className="hw-selectedcntrynme">India</p> */}
             </div>
             {showCity && (
               <OutsideClickHandler onOutsideClick={() => setShowCity(false)}>

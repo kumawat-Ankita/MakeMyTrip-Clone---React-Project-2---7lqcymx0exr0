@@ -1,6 +1,5 @@
 .singlehotelpage-maindiv {
   background-color: #ffffff;
-  /* border: 1px solid blue; */
 }
 .singlehotel-headerdiv {
   background: linear-gradient(180deg, #051320, #0c2540);
@@ -37,7 +36,6 @@
   height: 12px;
 }
 .selecteditem {
-  /* border: 2px solid red; */
   font-size: 16px;
   line-height: 20px;
   padding: 0 9px 4px;
@@ -63,12 +61,8 @@
   outline: 0;
   padding: 7px 20px;
   text-align: center;
-  /* height: 46px; */
 }
 .hoteldetails-maindiv {
-  /* border: 1px solid red; */
-  /* padding: 0px 145px 0px 145px; */
-  /* margin: 25px auto; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -130,7 +124,6 @@
   align-items: center;
 }
 .rooms-maindiv {
-  /* border: 2px solid red; */
   width: 1229px;
   display: flex;
   flex-direction: column;
@@ -152,7 +145,6 @@
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   height: 49px;
-  /* width: 100%; */
 }
 .roomtype-dropdown {
   width: 410px;
@@ -182,7 +174,6 @@
   width: 300px;
 }
 .suiteroom-details-maindiv {
-  /* border: 1px solid blue; */
   height: auto;
   display: flex;
   flex-direction: row;

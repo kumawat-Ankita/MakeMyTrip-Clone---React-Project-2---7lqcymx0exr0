@@ -70,7 +70,6 @@ const LoginPage = () => {
       ...formData,
       appType: "bookingportals",
     });
-    // console.log("login", data)
   };
 
   useEffect(() => {

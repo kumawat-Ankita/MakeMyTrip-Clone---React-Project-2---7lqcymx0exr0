@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./flightsearch.css";
 import { Stickyheader } from "../../components/stickeyheader/Stickyheader";
-import { useParams, useSearchParams } from "react-router-dom";
+import {useSearchParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
 import Flightcard from "./Flightcard";
 import Flighttopsection from "./Flighttopsection";
@@ -21,10 +21,8 @@ const FlightSearchpage = () => {
   const sort = params.get("sort");
   const departureTime = params.get("departureTime");
   const { get, data } = useFetch([]);
-  // const [stops, setSelectedOption] = useState(null);
-
+  
   const handleCheckboxChange = (key, value) => {
-    // setSelectedOption(value === selectedOption ? null : value);
     if (value === "") {
       params.delete(key);
       setParams(params);
@@ -48,7 +46,6 @@ const FlightSearchpage = () => {
   }, [params]);
 
   const handleSearchButtonClick = (searchData) => {
-    // Update the search parameters using the searchData from Flighttopsection
     setParams({
       source: searchData.source,
       destination: searchData.destination,
@@ -65,7 +62,6 @@ const FlightSearchpage = () => {
           <Flighttopsection updateSearchParams={handleSearchButtonClick} />
           <div className="partitiondiv"></div>
           <div className="flightsearch-btmdiv">
-            {/* <span className="bgcolor-span"></span> */}
             <div className="flightsearch-btmleftdiv">
               <div className="popularfilters-div">
                 <p className="popularfilters-head">Popular Filters</p>
@@ -103,7 +99,6 @@ const FlightSearchpage = () => {
                       <input
                         className="filter-checkbox"
                         type="checkbox"
-                        // value="0"
                         checked={stops === "0" ? true : false}
                         onChange={(e) =>
                           handleCheckboxChange(
@@ -120,7 +115,6 @@ const FlightSearchpage = () => {
                       <input
                         className="filter-checkbox"
                         type="checkbox"
-                        // value="1"
                         checked={stops === "1" ? true : false}
                         onChange={(e) =>
                           handleCheckboxChange(
@@ -137,7 +131,6 @@ const FlightSearchpage = () => {
                       <input
                         className="filter-checkbox"
                         type="checkbox"
-                        // value="2"
                         checked={stops === "2" ? true : false}
                         onChange={(e) =>
                           handleCheckboxChange(

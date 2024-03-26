@@ -6,9 +6,6 @@ import ForexWidget from "../forexwidget/ForexWidget";
 const HotelWidgetBottom = () => {
   return (
     <div>
-      {/* <div className="fw-mainbtmdiv">
-        <img className="fw-adv" src={fwad} alt="ad" />
-      </div> */}
       <Offers />
       <DownloadApp />
       <ForexWidget />
