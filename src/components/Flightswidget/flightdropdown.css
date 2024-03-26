@@ -6,14 +6,12 @@
   align-items: flex-start;
 }
 .search-from-div {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
 .dd-from-search-icon {
-  /* border: 1px solid red; */
   height: 13px;
   width: 13px;
   margin-right: 5px;
@@ -21,7 +19,6 @@
   position: absolute;
 }
 .dd-search-input {
-  /* border: 1px solid red; */
   width: 100%;
   background: #ffffff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
@@ -33,19 +30,16 @@
   font-weight: 700;
 }
 .list-for-place-search-div {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
 .from-search-list {
-  /* border: 1px solid red; */
   list-style: none;
   height: auto;
   padding: 0;
 }
 .from-search-list li {
-  /* border: 1px solid green; */
   padding: 5px 10px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -60,7 +54,6 @@
   width: 20px;
 }
 .airport-name-div {
-  /* border: 1px solid red; */
   width: 100%;
   display: flex;
   flex-direction: column;

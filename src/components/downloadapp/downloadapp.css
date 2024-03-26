@@ -1,5 +1,4 @@
 .dwnldappmain {
-  /* border: 2px solid red; */
   padding: 10px 60px 40px 40px;
   border-radius: 10px;
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
@@ -12,7 +11,6 @@
   justify-content: space-between;
 }
 .dwnldappleftcontainer {
-  /* border: 1px solid yellow; */
   width: 750px;
   height: 160px;
 }
@@ -21,10 +19,8 @@
   height: 96px;
   width: 650px;
   display: flex;
-  /* border: 1px solid red; */
 }
 .appdwnldiconimg {
-  /* border: 1px solid blue; */
   background-image: url("../../../public/assets/Images/appdetails.png");
   width: 92px;
   height: 96px;
@@ -33,7 +29,6 @@
   background-size: 250px 250px;
 }
 .dwnld-div {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,19 +43,14 @@
   margin: 5px 0 0 0;
   font-size: 14px;
   text-align: left;
-  /* border: 1px solid blue; */
-  /* width: 600px; */
 }
 .dwnld-div p span {
   font-weight: 700;
 }
 .left-bottomdiv {
-  /* border: 1px solid black; */
-  /* margin: 40px 40px 40px 30px; */
   margin: 30px 0 0 30px;
   width: 515px;
   height: 37px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,14 +90,12 @@
 }
 
 .dwnldapprightcontainer {
-  /* border: 1px solid blue; */
   width: 290px;
   height: 111px;
   display: flex;
 }
 .getfromstore {
   cursor: pointer;
-  /* border: 1px solid yellow; */
   width: 149px;
   display: flex;
   flex-direction: column;
@@ -128,7 +116,6 @@
   background-size: 250px 250px;
 }
 .mmtqrcode {
-  /* border: 1px solid green; */
   width: 105px;
   height: 105px;
   margin-bottom: 3px;

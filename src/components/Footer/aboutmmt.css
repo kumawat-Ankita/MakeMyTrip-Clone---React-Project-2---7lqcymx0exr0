@@ -5,7 +5,6 @@
   padding-bottom: 30px;
 }
 .about-main-div {
-  /* border: 2px solid blue; */
   display: flex;
   height: 40vh;
   justify-content: space-between;
@@ -14,7 +13,6 @@
 }
 .why-mmt {
   width: 60%;
-  /* border: 2px solid rebeccapurple; */
   height: 292px;
   display: flex;
   flex-direction: column;
@@ -31,7 +29,6 @@
 }
 .booking-flights {
   width: 60%;
-  /* border: 2px solid rebeccapurple; */
   height: 292px;
   display: flex;
   flex-direction: column;
@@ -49,7 +46,6 @@
 }
 .domestic-flights {
   width: 60%;
-  /* border: 2px solid rebeccapurple; */
   height: 292px;
   display: flex;
   flex-direction: column;

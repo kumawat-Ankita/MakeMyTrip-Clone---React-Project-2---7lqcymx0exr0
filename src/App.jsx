@@ -26,7 +26,6 @@ function App() {
   const { authenticated, isUserLoggedIn } = useAuthContext();
 
   useEffect(() => {
-    // console.log(authenticated);
     if (!authenticated) isUserLoggedIn();
   }, [authenticated]);
 

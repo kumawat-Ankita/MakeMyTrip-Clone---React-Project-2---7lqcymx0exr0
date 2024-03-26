@@ -1,7 +1,5 @@
 .flightwidgetmaindiv {
-  /* border:2px solid yellow; */
   height: 340px;
-  /* width: 97%; */
   padding: 65px 10px 0px 10px;
   margin-bottom: 40px;
   background-color: white;
@@ -11,12 +9,8 @@
   top: -50px;
   font-size: 14px;
 }
-/* .fw-travellersclassdiv {
-  margin-left: 25px;
-  margin-top: 10px;
-} */
+
 .fw-upperdiv {
-  /* border: 2px solid red; */
   cursor: pointer;
   padding: 7px;
   font-weight: 600;
@@ -25,7 +19,6 @@
   list-style: none;
 }
 .fw-upperdiv div ul {
-  /* border: 2px solid black; */
   list-style: none;
   display: flex;
   padding: 0;
@@ -44,7 +37,6 @@
 }
 
 .fw-fromdiv {
-  /* border: 2px solid green; */
   height: 100%;
   border-radius: 10px 0 0 10px;
   width: 313px;
@@ -56,11 +48,9 @@
 }
 
 .fw-fromdiv p:nth-child(1) {
-  /* border: 2px solid red; */
   margin-top: 0;
 }
 .fw-fromdiv p:nth-child(2) {
-  /* border: 2px solid red; */
   margin: 0;
   padding: 0px;
   margin: 0px;
@@ -89,7 +79,6 @@
 }
 
 .fw-todiv {
-  /* border: 2px solid green; */
   width: 313px;
   padding: 10px 19px;
   border-right: solid 1px #e7e7e7;
@@ -99,11 +88,9 @@
 }
 
 .fw-todiv p:nth-child(1) {
-  /* border: 2px solid red; */
   margin-top: 0;
 }
 .fw-todiv p:nth-child(2) {
-  /* border: 2px solid red; */
   margin: 0;
   padding: 0px;
   margin: 0px;
@@ -125,7 +112,6 @@
   align-items: flex-start;
 }
 .departureheaddiv {
-  /* border: 2px solid blue; */
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -138,7 +124,6 @@
 .departureheading {
   font-size: 14px;
   margin: 0;
-  /* padding: 0; */
 }
 
 .fw-departurediv p:nth-child(2) {
@@ -165,7 +150,6 @@
   align-items: flex-start;
 }
 .fw-travellersclassdiv {
-  /* border: 1px solid red; */
   width: 217px;
   border-radius: 0 10px 10px 0;
   padding: 10px 19px;
@@ -193,7 +177,6 @@
 }
 
 .fw-bottomdiv {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,7 +202,6 @@
 .fw-faretypes div {
   display: flex;
   align-items: center;
-  /* border: 2px solid red; */
   height: 45px;
   gap: 5px;
   background-color: rgb(242, 242, 242);
@@ -240,7 +222,6 @@
   font-size: 12px;
 }
 .fw-trendingsearches {
-  /* border: 2px solid red; */
   cursor: default;
   margin-left: 10px;
   width: 370px;
@@ -262,7 +243,6 @@
   border-radius: 5px;
 }
 .fw-trendingsearches p:nth-child(2) span {
-  /* border: 2px solid green; */
   margin: 10px;
 }
 .fw-trendingsearches p:nth-child(3) {
@@ -270,11 +250,9 @@
   border-radius: 5px;
 }
 .fw-trendingsearches p:nth-child(3) span {
-  /* border: 2px solid green; */
   margin: 10px;
 }
 .fw-exploremore {
-  /* border: 2px solid red; */
   cursor: default;
   color: white;
   display: flex;
@@ -311,11 +289,7 @@
   height: 11px;
   background-position: -149px -103px;
 }
-/* .fltSwipIcon {
-  width: 15px;
-  height: 11px;
-  background-position: -149px -111px;
-} */
+
 .fw-departurediv:hover {
   background-color: #eaf5ff;
 }
@@ -327,7 +301,6 @@
 }
 
 .new-div {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
 }

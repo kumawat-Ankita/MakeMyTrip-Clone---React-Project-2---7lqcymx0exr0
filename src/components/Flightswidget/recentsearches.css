@@ -1,5 +1,4 @@
 .recentsearchmain {
-  /* border: 2px solid red; */
   margin-top: 20px;
   padding: 25px;
   display: flex;
@@ -10,7 +9,6 @@
 .headingdiv {
   cursor: default;
   display: flex;
-  /* border: 2px solid blue; */
   align-items: center;
   justify-content: center;
   width: 300px;

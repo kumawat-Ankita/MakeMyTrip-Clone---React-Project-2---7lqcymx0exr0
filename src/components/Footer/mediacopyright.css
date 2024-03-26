@@ -1,6 +1,4 @@
 .mainmediadiv {
-  /* border: 2px solid yellow; */
-  /* position:fixed; */
   cursor: default;
   bottom: 0;
   width: 100%;
@@ -13,14 +11,12 @@
   justify-content: space-around;
 }
 .socialmediaicons {
-  /* border: 2px solid beige; */
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   width: 100px;
 }
 .copyright {
-  /* border: 2px solid red; */
   cursor: default;
   display: flex;
   flex-direction: column;
@@ -28,12 +24,10 @@
   width: 50%;
 }
 .copyright h3 {
-  /* border: 2px solid yellow; */
   margin: 0px;
   font-size: 16px;
 }
 .copyright p {
-  /* border: 2px solid green; */
   margin: 0px;
   font-size: 14px;
   font-weight: 600;

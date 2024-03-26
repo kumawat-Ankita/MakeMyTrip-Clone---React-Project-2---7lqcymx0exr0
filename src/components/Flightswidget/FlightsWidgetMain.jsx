@@ -52,8 +52,7 @@ const FlightsWidgetMain = () => {
       airportB: prevLocations.airportA,
     }));
 
-    // Swap the airport data
-    setFromAirportData((prevFromAirportData) => ({
+       setFromAirportData((prevFromAirportData) => ({
       ...toAirportData,
       iata_code: toAirportData.iata_code,
       name: toAirportData.name,

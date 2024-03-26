@@ -1,5 +1,4 @@
 .fwchoose-maindiv {
-  /* border: 2px solid red; */
   cursor: pointer;
   height: 60px;
   background-color: white;
@@ -15,7 +14,6 @@
   justify-content: center;
   gap: 10px;
   font-size: 14px;
-  /* padding: 12px 15px 12px 15px; */
 }
 .fwchoosewtg img {
   height: 28px;

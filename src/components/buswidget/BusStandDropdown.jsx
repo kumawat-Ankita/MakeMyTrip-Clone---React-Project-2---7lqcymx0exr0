@@ -22,9 +22,6 @@ const BusStandDropdown = ({ handleSearchData, field, busData, setBusData }) => {
         <div className="bw-from" onClick={handleCityDropdown}>
           <p>{field}</p>
           <p>{busData.location}</p>
-          {/* <p>
-            {airportData.iata_code}, {airportData.name}
-          </p> */}
         </div>
         {showDropdown && (
           <OutsideClickHandler

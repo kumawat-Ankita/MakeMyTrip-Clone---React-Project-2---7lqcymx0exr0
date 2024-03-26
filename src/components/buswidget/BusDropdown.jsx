@@ -11,7 +11,6 @@ const BusDropdown = ({ setShowDropdown, updateSelectedBusStand }) => {
   useEffect(() => {
     get("/bookingportals/hotel");
   }, []);
-  // console.log(data);
   const handleBusSelect = (bus) => {
     updateSelectedBusStand(bus);
     setShowDropdown(false);

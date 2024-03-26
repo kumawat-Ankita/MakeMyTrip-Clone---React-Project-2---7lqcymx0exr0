@@ -5,7 +5,6 @@ import {insurance} from "../../../src/allimages";
 import {exploreif} from "../../../src/allimages";
 import {mice} from "../../../src/allimages";
 import {giftcard} from "../../../src/allimages";
-import {fwad} from "../../../src/allimages";
 import { Link } from "react-router-dom";
 
 const FwChooseOption = () => {
@@ -48,7 +47,7 @@ const FwChooseOption = () => {
           </div>
         </div>
       </Link>
-      {/* <img src={fwad} alt="ad"/> */}
+     
     </>
   );
 };
