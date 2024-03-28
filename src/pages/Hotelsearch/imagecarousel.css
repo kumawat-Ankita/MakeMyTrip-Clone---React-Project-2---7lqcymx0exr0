@@ -22,10 +22,11 @@
 .topcarousel-div {
   display: flex;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .baseRight {
-  margin: 15px 0px 0px 60px;
+  /* margin: 15px 0px 0px 60px; */
+  margin-top: 15px;
   height: 230px;
   width: 370px;
   background-color: #fff;

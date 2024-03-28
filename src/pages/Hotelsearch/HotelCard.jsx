@@ -3,6 +3,7 @@ import "./hotelsearch.css";
 import { Link } from "react-router-dom";
 
 const HotelCard = ({ data }) => {
+  console.log(data ,'data');
   return (
     <>
       <div className="mainsearchresultspage">
@@ -40,7 +41,7 @@ const HotelCard = ({ data }) => {
                   </div>
                   {/* <p className="numberofratings">266 Ratings</p> */}
                   <div className="hotelbookingprice">
-                    <h2>₹ {hotel?.avgCostPerNight}</h2>
+                    <h2>₹ {hotel?.rooms[0]?.costPerNight}</h2>
                     <p>+ ₹ {hotel?.rooms[0].costDetails.taxesAndFees}</p>
                     <p>Per Night</p>
                   </div>

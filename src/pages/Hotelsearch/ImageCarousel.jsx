@@ -43,7 +43,7 @@ const ImageCarousel = ({ data }) => {
           <div className="prmRoomDtlCard"></div>
           <span className="font-bold text-lg ">Luxe Twin Room</span>
           <h2 className="text-[#9b9b9b] text-[14px] flex">
-            <MdPolicy className="mt-1 mr-1" /> ExtraBedPolicy
+            <MdPolicy className="" /> ExtraBedPolicy
           </h2>
           <div className="baseRight-bottom">
             <span className="flex mt-2">
