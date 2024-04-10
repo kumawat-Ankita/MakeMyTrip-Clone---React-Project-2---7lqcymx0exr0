@@ -5,7 +5,13 @@
   display: flex;
   padding: 8px 110px 0 110px;
   position: sticky;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    flex-direction: column;
+    position: relative;
+  }
 }
+
 .filldetailslist div {
   background: #ffffff1a;
   border-radius: 4px;
@@ -17,6 +23,9 @@
   align-items: flex-start;
   width: 200px;
   padding: 0;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 .filldetailslist div p:first-child {
   font-size: 12px;
@@ -56,6 +65,10 @@
   padding: 9px 20px;
   text-align: center;
   height: 46px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .searchresult-linktohome {
@@ -186,6 +199,11 @@
   height: auto;
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+  }
 }
 .applyfilters-sidebar {
   width: 230px;
@@ -193,6 +211,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding-left: 20px;
+  }
 }
 .exploremapdiv {
   border-radius: 6px;
@@ -288,6 +310,10 @@
   height: 269px;
   width: 940px;
   border-radius: 4px;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    width: 100%;
+  }
 }
 .showhoteldiv:hover {
   border: 1px solid #008cff;
@@ -296,12 +322,22 @@
 .hotelsdetailsdiv {
   height: 225px;
   display: flex;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    width: 100%;
+  }
 }
 .hoteldetails-leftdiv {
   width: 666px;
   height: 193px;
   padding: 16px;
   display: flex;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 .hotelimagesdiv {
   height: 193px;
@@ -327,6 +363,10 @@
   margin-left: 20px;
   width: 407px;
   height: 193px;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    width: 100%;
+  }
 }
 .hotelname-rating-div {
   display: flex;

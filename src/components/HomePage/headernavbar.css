@@ -16,6 +16,9 @@
   background-color: #fff;
   font-size: 14px;
   z-index: 2;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 .headernavlist {
   text-decoration: none;
@@ -23,6 +26,11 @@
   display: flex;
   gap: 40px;
   padding: 0;
+  @media only screen and (max-width: 600px) {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .headernavlist li {
   display: flex;
@@ -30,6 +38,12 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+    :nth-child(2) {
+      text-wrap: nowrap;
+    }
+  }
 }
 .flightimage {
   background-image: url("../../../public/assets/Images/headerimages.png");

@@ -6,4 +6,7 @@
 }
 .mainpage-bottom {
   background-color: #f2f2f2;
+  @media only screen and (max-width: 600px) {
+    height: 610px;
+  }
 }

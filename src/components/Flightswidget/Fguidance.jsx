@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Fguidance = () => {
   return (
     <>
-      <Container>
+      <Container >
         <Link to="/comingsoon">
           <div className="fguidance-main">
             <div className="internationalflightbook">

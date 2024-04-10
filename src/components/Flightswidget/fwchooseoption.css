@@ -4,6 +4,9 @@
   background-color: white;
   border-radius: 50px;
   display: flex;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .fwchoosewtg {
   border-right: 1px solid #d8d8d8;

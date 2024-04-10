@@ -1,3 +1,9 @@
+.flightwidget {
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+  }
+}
+
 .flightwidgetmaindiv {
   height: 340px;
   padding: 65px 10px 0px 10px;
@@ -8,6 +14,13 @@
   border-radius: 8px;
   top: -50px;
   font-size: 14px;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+    top: 0;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .fw-upperdiv {
@@ -34,6 +47,11 @@
   border-radius: 10px;
   display: flex;
   margin-right: 0;
+  @media only screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: unset;
+  }
 }
 
 .fw-fromdiv {
@@ -45,6 +63,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media only screen and (max-width: 600px) {
+    width: 100px;
+    flex-wrap: wrap;
+  }
 }
 
 .fw-fromdiv p:nth-child(1) {
@@ -262,6 +284,9 @@
   font-weight: 700;
   font-size: 13px;
   padding: 10px;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .fltSwipCircle {
   width: 40px;

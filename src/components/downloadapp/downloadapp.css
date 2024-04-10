@@ -9,16 +9,27 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
 }
 .dwnldappleftcontainer {
   width: 750px;
   height: 160px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 .left-topdiv {
   cursor: default;
   height: 96px;
   width: 650px;
   display: flex;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 .appdwnldiconimg {
   background-image: url("../../../public/assets/Images/appdetails.png");
@@ -33,6 +44,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 .dwnld-div h1 {
   margin: 0;
@@ -54,6 +68,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .phn-nmbr-input {
   display: flex;
