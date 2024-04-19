@@ -18,6 +18,9 @@
   z-index: 2;
   @media only screen and (max-width: 600px) {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: wrap;
   }
 }
 .headernavlist {
@@ -41,7 +44,7 @@
   @media only screen and (max-width: 600px) {
     justify-content: center;
     :nth-child(2) {
-      text-wrap: nowrap;
+      text-wrap: wrap;
     }
   }
 }

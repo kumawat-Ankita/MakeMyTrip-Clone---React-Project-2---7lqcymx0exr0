@@ -13,6 +13,7 @@
   @media only screen and (max-width: 600px) {
     height: unset;
     align-items: flex-start;
+    flex-direction: column;
   }
 }
 .why-mmt {
