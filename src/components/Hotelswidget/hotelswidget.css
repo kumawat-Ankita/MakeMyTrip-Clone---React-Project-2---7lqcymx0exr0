@@ -193,6 +193,9 @@
   gap: 20px;
   height: 31px;
   font-size: 12px;
+  @media only screen and (max-width: 600px) {
+    height: unset;
+  }
 }
 .hw-bottomdiv p {
   font-weight: 700;
