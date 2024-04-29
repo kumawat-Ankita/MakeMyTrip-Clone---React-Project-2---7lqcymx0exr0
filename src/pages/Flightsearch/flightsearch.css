@@ -590,6 +590,9 @@
   width: 120px;
   height: 69px;
   gap: 5px;
+  @media only screen and (max-width: 600px) {
+    align-items: flex-start;
+  }
 }
 .arrival-details-div p:first-child {
   margin: 0;
@@ -609,6 +612,9 @@
   justify-content: center;
   width: 120px;
   height: 69px;
+  @media only screen and (max-width: 600px) {
+    align-items: center;
+  }
 }
 .price-details-div p:first-child {
   margin: 0;
