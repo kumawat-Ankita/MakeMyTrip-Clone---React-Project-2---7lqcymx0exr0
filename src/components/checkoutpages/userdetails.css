@@ -18,6 +18,9 @@
   padding-top: 20px;
   font-size: 18px;
   font-weight: 900;
+  @media only screen and (max-width: 600px) {
+    padding-left: 27px;
+  }
 }
 .caution-text {
   background-color: rgb(255, 237, 209);
@@ -29,6 +32,12 @@
   margin: 0;
   width: 100%;
   font-size: 12px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 24%;
+    margin-left: 27px;
+  }
 }
 .caution-text span {
   font-weight: 900;
@@ -43,6 +52,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 13px;
+  @media only screen and (max-width: 600px) {
+    width: 26%;
+    margin-left: 24px;
+  }
 }
 .udmd-topdiv {
   display: flex;
@@ -52,6 +65,10 @@
   gap: 22px;
   width: 100%;
   margin: 15px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .name-input {
   border-radius: 4px;
@@ -83,6 +100,9 @@
   flex-direction: row;
   margin: 15px;
   gap: 10px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .udmd-label {
   margin: 0 0 6px 0;
@@ -112,6 +132,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 13px;
+  @media only screen and (max-width: 600px) {
+    width: 26%;
+    margin-left: 24px;
+  }
 }
 .psmd-header {
   font-size: 18px;
@@ -128,6 +152,9 @@
   flex-direction: row;
   margin: 15px;
   gap: 12px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .pincode-input-div {
   display: flex;
@@ -169,4 +196,8 @@
   text-align: center;
   text-transform: uppercase;
   width: 310px;
+  @media only screen and (max-width: 600px) {
+    margin-left: 24px;
+    width: unset;
+  }
 }

@@ -34,12 +34,18 @@
   border: solid 1px #d8d8d8;
   padding: 20px;
   margin-bottom: 20px;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
 }
 .upi-details-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .upi-qrcode-div {
   display: flex;

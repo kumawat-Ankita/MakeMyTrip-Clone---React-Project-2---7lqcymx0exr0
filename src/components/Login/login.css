@@ -8,6 +8,9 @@
   border-radius: 12px;
   z-index: 3;
   background-color: white;
+  @media only screen and (max-width: 600px) {
+    width: 320px;
+  }
 }
 .logintopdiv {
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.3);
@@ -81,6 +84,9 @@ form input {
   gap: 4px;
   margin: 0;
   font-size: 12px;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .formbottomdiv {
@@ -112,6 +118,10 @@ form input {
   color: black;
   border-radius: 50%;
   cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    top: 12vh;
+    left: 80vw;
+  }
 }
 .login-page {
   position: relative;
@@ -139,4 +149,7 @@ form input {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }

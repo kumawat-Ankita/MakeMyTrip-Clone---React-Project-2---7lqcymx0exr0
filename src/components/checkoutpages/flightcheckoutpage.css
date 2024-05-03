@@ -12,6 +12,9 @@
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
 }
 .pageHeaderWrap {
   display: flex;
@@ -53,6 +56,9 @@
 }
 .pageLeftConainer {
   width: 880px;
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
 }
 .componentContainer {
   width: 880px;
@@ -60,9 +66,16 @@
   background-color: #fff;
   border-radius: 2px;
   margin-bottom: 20px;
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+    padding-right: 40px;
+  }
 }
 .padding20 {
   padding: 20px;
+  @media only screen and (max-width: 600px) {
+    padding: 8px;
+  }
 }
 .flightDetailBlk {
   padding: 12px 0;

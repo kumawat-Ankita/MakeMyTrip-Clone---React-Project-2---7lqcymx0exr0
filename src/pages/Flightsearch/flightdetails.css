@@ -43,6 +43,9 @@
   display: flex;
   align-items: center;
   height: 18px;
+  @media only screen and (max-width: 600px) {
+    border: none;
+  }
 }
 .flightDetailsRow {
   display: flex;

@@ -4,6 +4,9 @@
   z-index: 20;
   background: #fff;
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+  @media only screen and (max-width: 600px) {
+    top: auto;
+  }
 }
 .stickyheadermaindiv {
   height: 11vh;
@@ -15,7 +18,7 @@
   gap: 10px;
   background-color: white;
   @media only screen and (max-width: 600px) {
-    display: none;
+    gap: 5px;
   }
 }
 .bluelogodiv img {
@@ -25,6 +28,9 @@
 .stickynavlinks {
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .navlinkslist {
   margin-right: 140px;
