@@ -4,9 +4,15 @@ import { IoSearchCircle } from "react-icons/io5";
 import { Container } from "@mui/material";
 
 const RecentSearches = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <>
-      <Container>
+      <Container onClick={scrollToTop}>
         <div className="recentsearchmain">
           <div className="headingdiv">
             <IoSearchCircle size={35}/>

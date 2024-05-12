@@ -3,7 +3,7 @@ import "./stickyheader.css";
 import {logoblue} from "../../../src/allimages";
 import { BsChevronDown } from "react-icons/bs";
 import TabforLogin from "../Login/TabforLogin";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, createSearchParams } from "react-router-dom";
 import { useAuthContext } from "../../Context/AuthContext";
 import { SlLogout } from "react-icons/sl";
 import { SlHandbag } from "react-icons/sl";
@@ -14,6 +14,28 @@ export const Stickyheader = () => {
   const { showLogin, setShowLogin } = useContext(LoginContext);
   const [isHovered, setIsHovered] = useState(false);
   const { authenticated, logoutUser } = useAuthContext();
+  const [searchData, setSearchData] = useState({
+    location: "Delhi",
+    
+  });
+  const [searchDataFlight, setSearchDataFlight] = useState({
+    source: "PNQ",
+    destination: "JAI",
+    day: "Mon",
+    date: new Date().toLocaleDateString(),
+  });
+  const [searchDataTrain, setSearchDataTrain] = useState({
+    source: "Delhi Junction",
+    destination: "Salem Junction",
+    day: "Tue",
+    date: new Date().toLocaleDateString(),
+  });
+  const [searchDataBus, setSearchDataBus] = useState({
+    source: "Mumbai, Maharashtra",
+    destination: "Jabalpur, Madhya Pradesh",
+    day: "Mon",
+    date: new Date().toLocaleDateString(),
+  });
 
   const openMyStuffHover = () => {
     setIsHovered(true);
@@ -51,12 +73,16 @@ export const Stickyheader = () => {
           <div className="stickynavlinks">
             <ul className="navlinkslist">
               <li>
-                <div className="sh-flightsimg"></div>
+              <Link to={`/Flights?${createSearchParams(searchDataFlight)}`}>
+              <div className="sh-flightsimg"></div>
                 <div>Flights</div>
+             </Link>
               </li>
               <li>
-                <div className="sh-hotelimg"></div>
-                <div>Hotels</div>
+              <Link to={`/hotels?${createSearchParams(searchData)}`}>
+              <div className="sh-hotelimg"></div>
+                  <div>Hotels</div>
+             </Link>
               </li>
               <li>
                 <div className="sh-homestaysimg"></div>
@@ -67,12 +93,16 @@ export const Stickyheader = () => {
                 <div>Holiday Packages</div>
               </li>
               <li>
+              <Link to={`/trains?${createSearchParams(searchDataTrain)}`}>
                 <div className="sh-trainimg"></div>
                 <div>Trains</div>
+                </Link>
               </li>
               <li>
+              <Link to={`/buses?${createSearchParams(searchDataBus)}`}>
                 <div className="sh-busesimg"></div>
                 <div>Buses</div>
+                </Link>
               </li>
               <li>
                 <div className="sh-cabsimg"></div>

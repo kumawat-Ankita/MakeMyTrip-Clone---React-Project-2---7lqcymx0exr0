@@ -22,6 +22,7 @@ const SignupPage = () => {
   const { error: apiError, data, post, loading } = useFetch({});
   const [loginError, setLoginError] = useState(null);
   const { signUser, authenticated } = useAuthContext();
+  
 
   const getErrors = (name, value) => {
     let errorMessage = "";
@@ -64,6 +65,13 @@ const SignupPage = () => {
       Object.values(errors).join("") ||
       Object.values(formData).some((val) => val === "")
     ) {
+      if (!formData.email && !formData.password) {
+        setErrors({
+          name: "Enter name",
+          email: "Enter email",
+          password: "Enter password",
+        });
+      } 
       console.log(Object.values(errors).join(""));
       return;
     }
@@ -73,6 +81,7 @@ const SignupPage = () => {
       appType: "bookingportals",
     });
   };
+  
   useEffect(() => {
     if (apiError) {
       if (
@@ -91,6 +100,7 @@ const SignupPage = () => {
           progress: undefined,
           theme: "light",
         });
+        
       }
     }
     if (data?.data) {
@@ -104,10 +114,10 @@ const SignupPage = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-      });
+      });    
     }
   }, [apiError, data]);
-
+ 
   return (
     <>
       <form onSubmit={handleSubmit}>

@@ -1,13 +1,20 @@
 import React from "react";
 import "./hotelsearch.css";
 import { Link } from "react-router-dom";
+import { Box, Skeleton } from "@mui/material";
 
-const HotelCard = ({ data }) => {
-  console.log(data ,'data');
+const HotelCard = ({ data, loading }) => {
   return (
     <>
       <div className="mainsearchresultspage">
         <h3>Popular in {data?.data?.hotels[0]?.location}</h3>
+
+        {loading &&
+          new Array(20)
+            .fill("")
+            .map((_, i) => (
+              <Skeleton key={i} width={940} height={400} animation="wave" />
+            ))}
         {data?.data?.hotels.map((hotel, index) => (
           <div key={index} className="showhoteldiv">
             <Link to={`/singlehotel/${hotel._id}`}>
@@ -41,7 +48,7 @@ const HotelCard = ({ data }) => {
                   </div>
                   {/* <p className="numberofratings">266 Ratings</p> */}
                   <div className="hotelbookingprice">
-                    <h2>₹ {hotel?.rooms[0]?.costPerNight}</h2>
+                    <h2>₹ {parseFloat(hotel?.avgCostPerNight).toFixed(0)}</h2>
                     <p>+ ₹ {hotel?.rooms[0].costDetails.taxesAndFees}</p>
                     <p>Per Night</p>
                   </div>

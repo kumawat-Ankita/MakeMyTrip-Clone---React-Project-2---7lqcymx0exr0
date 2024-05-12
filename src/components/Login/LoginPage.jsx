@@ -62,6 +62,12 @@ const LoginPage = () => {
       Object.values(errors).join("") ||
       Object.values(formData).some((val) => val === "")
     ) {
+      if (!formData.email && !formData.password) {
+        setErrors({
+          email: "Enter email",
+          password: "Enter password",
+        });
+      } 
       console.log(Object.values(errors).join(""));
       return;
     }
@@ -71,6 +77,7 @@ const LoginPage = () => {
       appType: "bookingportals",
     });
   };
+  
 
   useEffect(() => {
     if (apiError) {

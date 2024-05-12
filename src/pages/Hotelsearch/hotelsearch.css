@@ -347,12 +347,14 @@
   border-radius: 4px;
   height: 138px;
   width: 239px;
+  margin: 7px;
 }
 .subimagediv {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   width: 239px;
+  margin-left: 7px;
 }
 .subimagediv img {
   height: 50px;

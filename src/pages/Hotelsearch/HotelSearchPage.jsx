@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./hotelsearch.css";
 import { Stickyheader } from "../../components/stickeyheader/Stickyheader";
-import {useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import HotelTopSection from "./HotelTopSection";
 import HotelCard from "./HotelCard";
 import useFetch from "../../Hooks/useFetch";
@@ -12,7 +12,7 @@ const HotelSearchPage = () => {
   const rating = params.get("rating");
   const roomType = params.get("roomType");
   const avgCostPerNight = params.get("avgCostPerNight");
-  const { get, data } = useFetch([]);
+  const { get, data, loading } = useFetch([]);
 
   const handleCheckboxChange = (key, value) => {
     if (value === "") {
@@ -31,7 +31,7 @@ const HotelSearchPage = () => {
         rating ? `&filter={"rating":"${rating}"}` : ""
       }${roomType ? `&filter={"rooms.roomType":"${roomType}"}` : ""}${
         avgCostPerNight
-          ? `&filter={"avgCostPerNight":{"$lte":"7000", "$gte":"5000"}}`
+        ? `&filter={"avgCostPerNight":{ "$gte":${avgCostPerNight}}}`
           : ""
       }`
     );
@@ -53,6 +53,8 @@ const HotelSearchPage = () => {
           data={data}
           updateSearchParams={handleHotelSearchBtnClick}
         />
+
+        {/* <Container> */}
         <div className="hotelsearchbottomdiv">
           <div className="applyfilters-sidebar">
             <div className="selectfiltersdiv">
@@ -60,6 +62,19 @@ const HotelSearchPage = () => {
               <div className="filtercategorydiv">
                 <p className="filtercategory-heading">Price per night</p>
                 <ul>
+                <li>
+                    <input
+                      type="checkbox"
+                      checked={avgCostPerNight === "4000" ? true : false}
+                      onChange={(e) =>
+                        handleCheckboxChange(
+                          "avgCostPerNight",
+                          e.target.checked ? 4000 : ""
+                        )
+                      }
+                    />
+                    <p>₹ 4000+</p>
+                  </li>
                   <li>
                     <input
                       type="checkbox"
@@ -71,17 +86,23 @@ const HotelSearchPage = () => {
                         )
                       }
                     />
-                    <p>₹ 0 - ₹ 1500</p>
+                    <p>₹ 5000+</p>
                   </li>
                   <li>
-                    <input type="checkbox" />
-                    <p>₹ 1500 - ₹ 2500</p>
+                    <input
+                      type="checkbox"
+                      checked={avgCostPerNight === "7000" ? true : false}
+                      onChange={(e) =>
+                        handleCheckboxChange(
+                          "avgCostPerNight",
+                          e.target.checked ? 7000 : ""
+                        )
+                      }
+                    />
+                    <p>₹ 7000+</p>
                   </li>
-                  <li>
-                    <input type="checkbox" />
-                    <p>₹ 2500 - ₹ 6000</p>
-                  </li>
-                  <li>
+            
+                  {/* <li>
                     <input type="checkbox" />
                     <p>₹ 6000 - ₹ 9500</p>
                   </li>
@@ -100,7 +121,7 @@ const HotelSearchPage = () => {
                   <li>
                     <input type="checkbox" />
                     <p>₹ 30000+</p>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
@@ -208,9 +229,9 @@ const HotelSearchPage = () => {
               </div>
             </div>
           </div>
-
-          <HotelCard data={data} />
+          <HotelCard data={data} loading={loading} />
         </div>
+        {/* </Container> */}
       </div>
     </>
   );
