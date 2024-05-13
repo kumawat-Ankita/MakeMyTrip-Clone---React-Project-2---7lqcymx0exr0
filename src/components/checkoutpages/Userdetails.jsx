@@ -150,15 +150,7 @@ const Userdetails = ({ data, keyforTrips }) => {
     setAllFieldsFilled(allFieldsFilled);
   };
 
-  // Function to handle form submission
-  const handleFormSubmit = () => {
-    if (!isValid) {
-      // If form is not valid, set formSubmitted to true to display error message
-      setFormSubmitted(true);
-      console.log("error msg");
-
-    }
-  };
+  
 
   return (
     <>
@@ -309,8 +301,6 @@ const Userdetails = ({ data, keyforTrips }) => {
               isValid && allFieldsFilled ? "enabled" : "disabled"
             }`}
             disabled={!isValid}
-            onClick={handleFormSubmit}
-            
           >
            
             Continue
