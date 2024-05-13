@@ -12,6 +12,7 @@ const Userdetails = ({ data, keyforTrips }) => {
   const [state, setState] = useState("");
   const [address, setAddress] = useState("");
   const [isValid, setIsValid] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   // Error state variables
   const [allFieldsFilled, setAllFieldsFilled] = useState(false);
@@ -23,8 +24,41 @@ const Userdetails = ({ data, keyforTrips }) => {
 
   useEffect(() => {
     localStorage.setItem("keyforpayment", keyforTrips);
-  }, []);
 
+    // Update validity whenever any input changes
+    setIsValid(
+      !mobileNumberError &&
+      !emailError &&
+      !pincodeError &&
+      !stateError &&
+      !addressError &&
+      firstName &&
+      lastName &&
+      gender &&
+      mobileNumber &&
+      email &&
+      pincode &&
+      state &&
+      address
+    );
+  }, [
+    firstName,
+    lastName,
+    gender,
+    mobileNumber,
+    email,
+    pincode,
+    state,
+    address,
+    mobileNumberError,
+    emailError,
+    pincodeError,
+    stateError,
+    addressError,
+    keyforTrips
+  ]);
+
+  // Function to handle input change
   const handleChange = (fieldName, event) => {
     let errorMessage = "";
     switch (fieldName) {
@@ -114,6 +148,16 @@ const Userdetails = ({ data, keyforTrips }) => {
       address,
     ].every((field) => field !== "");
     setAllFieldsFilled(allFieldsFilled);
+  };
+
+  // Function to handle form submission
+  const handleFormSubmit = () => {
+    if (!isValid) {
+      // If form is not valid, set formSubmitted to true to display error message
+      setFormSubmitted(true);
+      console.log("error msg");
+
+    }
   };
 
   return (
@@ -250,17 +294,29 @@ const Userdetails = ({ data, keyforTrips }) => {
             </div>
           </div>
         </div>
+        
+        {/* Display error message if form is submitted and not all fields are filled */}
+        {formSubmitted && !isValid && (
+          <div className="error-message">
+            Please fill in all required fields.
+          </div>
+        )}
 
+        {/* Continue button */}
         <Link to={`/payment/${data?.data?._id}`}>
           <button
             className={`ud-continue-btn ${
               isValid && allFieldsFilled ? "enabled" : "disabled"
             }`}
             disabled={!isValid}
+            onClick={handleFormSubmit}
+            
           >
+           
             Continue
           </button>
         </Link>
+        
       </div>
     </>
   );

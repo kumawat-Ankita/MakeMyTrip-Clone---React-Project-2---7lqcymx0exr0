@@ -8,7 +8,7 @@ import AuthContextProvider from "./Context/AuthContext.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <AuthContextProvider>
-      <div className="overflow-hidden">
+      <div className="overFlow">
         <App />
       </div>
 

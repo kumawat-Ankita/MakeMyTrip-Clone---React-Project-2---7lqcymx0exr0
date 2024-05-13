@@ -56,6 +56,9 @@ const HotelsWiget = () => {
   const handleCheckinDate = (date) => {
     setSelectedCheckinDate(date);
     setShowCheckinDate(false);
+    const nextDate = new Date(date);
+    nextDate.setDate(nextDate.getDate() + 1); // Increment the date by 1 to get the next day
+    setSelectedCheckoutDate(nextDate); // Set the check-out date to the next day
     handleSearchData(
       "day",
       date.toLocaleDateString("default", { weekday: "short" })
@@ -68,7 +71,15 @@ const HotelsWiget = () => {
   };
 
   const handleCheckoutDate = (nextDate) => {
-    setSelectedCheckoutDate(nextDate);
+    const isDateValid = nextDate >= selectedCheckinDate; // Check if the selected date is after or the same as the check-in date
+    if (isDateValid) {
+      setSelectedCheckoutDate(nextDate);
+    } else {
+      // If the selected date is before the check-in date, set the check-out date to the next day of the check-in date
+      const nextDay = new Date(selectedCheckinDate);
+      nextDay.setDate(nextDay.getDate() + 1);
+      setSelectedCheckoutDate(nextDay);
+    }
     setShowCheckoutDate(false);
     handleSearchData(
       "day",
